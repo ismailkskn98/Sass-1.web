@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+p {
+  letter-spacing: 0.06rem;
+}
+
+.logo h1 {
+  display: none;
+}
+
+#navbar ul a {
+  letter-spacing: normal;
+  font-size: 0.9rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+}
+
+p {
+  letter-spacing: 0.04rem;
+}/*# sourceMappingURL=tablet.css.map */

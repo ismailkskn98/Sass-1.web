@@ -1,0 +1,38 @@
+@import "global";
+
+header{
+    .container{
+        flex-direction: column;
+        padding: 1rem;
+        height: 110px;
+        .logo{
+            max-width: 70px;
+            max-height: 40px;
+        }
+        #navbar{
+            a{
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
+// eğitimler
+#egitimler{
+
+    .container{
+        flex-direction: column;
+        .article{
+            padding: 1rem 0;
+            width: 100%;
+        }
+    }
+    h2{
+        font-size:nth($heading-medium,1)-0.10rem;
+    }
+    h3{
+        font-size:nth($heading-small,1)-0.10rem;
+    }
+    p{
+        letter-spacing: nth($harf-aralik,1)-0.020rem;
+    }
+}

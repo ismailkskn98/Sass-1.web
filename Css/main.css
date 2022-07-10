@@ -4,6 +4,54 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+#egitimler .container, header .container {
+  max-width: 1440px;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+p {
+  letter-spacing: 0.06rem;
+}
+
+#profil a:hover, header #navbar ul li a:hover {
+  border: 1px solid #EF7013;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: #EF7013;
+  padding: 0.5rem;
+}
+
+header {
+  background: #000549;
+}
 header .container {
   display: flex;
   flex-direction: row;
@@ -22,18 +70,61 @@ header .container .logo img {
   padding-right: 2rem;
 }
 header #navbar ul {
-  list-style: none;
   display: flex;
 }
-header #navbar ul li {
+header #navbar ul li a {
+  color: white;
+  font-size: 0.9rem;
+  border: 1px solid #000549;
+  letter-spacing: 0.75px;
+  padding: 0.5rem;
+}
+
+#profil {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#profil .name {
+  padding-bottom: 1rem;
+}
+#profil .name p {
+  opacity: 0.7;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+#profil a {
+  color: rgb(255, 255, 255);
+  border: 1px solid #000549;
+  border-radius: 5px;
+  background-color: #000549;
+  padding: 0.5rem;
+}
+#profil a:hover {
+  background-color: white;
+}
+
+#egitimler {
+  background-color: #000549;
+  color: white;
+  text-align: center;
   padding: 1rem;
 }
-header #navbar ul li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+#egitimler .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
 }
-header #navbar ul li a:hover {
-  border-top: 1px solid #EF7013;
-  border-bottom: 1px solid #EF7013;
-  color: #EF7013;
+#egitimler .container .article {
+  width: 32%;
+}
+#egitimler .container .article:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

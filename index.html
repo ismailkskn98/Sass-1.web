@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" media="(max-width:810px)" href="./Css/tablet.css">
+    <link rel="stylesheet" media="(max-width:520px)" href="./Css/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Sass ile ilk site</title>
 </head>
 <body>
@@ -24,5 +30,35 @@
                 </nav>
         </div>
     </header>
+    <section id="profil">
+        <div class="profilresmi">
+            <img src="./images/profil.png" width="300px" height="300px" alt="muhammet elçi">
+        </div>
+        <div class="name">
+            <h2>Muhammet Elçi</h2>
+            <p>Matematik öğretmeni | Youtuber</p>
+        </div>
+        <a href="#dersler">Dersler</a>
+    </section>
+    <section id="egitimler">
+        <h2>Eğitimler</h2>
+        <div class="container">
+            <div class="article">
+                <i class="fa-solid fa-pencil"></i>
+                <h3>Matematik Dersleri</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facere quia quae accusamus, sint asperiores maxime est voluptatum nostrum libero?</p>
+            </div>
+            <div class="article">
+                <i class="fa-solid fa-pencil"></i>
+                <h3>Geometri Dersleri</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facere quia quae accusamus, sint asperiores maxime est voluptatum nostrum libero?</p>
+            </div>
+            <div class="article">
+                <i class="fa-solid fa-pencil"></i>
+                <h3>Motivasyon</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facere quia quae accusamus, sint asperiores maxime est voluptatum nostrum libero?</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

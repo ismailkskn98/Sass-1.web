@@ -1,0 +1,28 @@
+@import "global";
+
+.logo {
+    h1{
+        display: none;
+    }
+}
+
+// menu
+#navbar{
+    ul{
+        a{
+            letter-spacing: normal;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+// eğitimler
+h2{
+    font-size:nth($heading-medium,1)-0.10rem;
+}
+h3{
+    font-size:nth($heading-small,1)-0.10rem;
+}
+p{
+    letter-spacing: nth($harf-aralik,1)-0.020rem;
+}

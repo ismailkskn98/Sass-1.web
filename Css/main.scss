@@ -1,10 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "global";
+
+// header
 header {
+    background: nth($nav-bg,1);
     .container {
+    @extend %sayfa-ortalama;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -12,31 +12,83 @@ header {
     max-width: 1440px;
     margin: 0 auto;
     height: 80px;
-     .logo{
+    .logo{
         display: flex;
         align-items: center;
-        color: #EF7013;
+        color:nth($hover-color,1);
         img{
             padding-right: 2rem;
         }
-     }
     }
+    }
+
+    // menu
     #navbar {
         ul {
-            list-style: none;
             display: flex;
-            li{
-                padding: 1rem;
-            a{
-                text-decoration: none;
-                color :rgb(0, 0, 0);
-                &:hover{
-                    border-top: 1px solid #EF7013;
-                    border-bottom: 1px solid #EF7013;
-                    color:#EF7013;
+            li{               
+                a{
+                color :nth($nav-color,1);
+                font-size: 0.9rem;
+                border: 1px solid nth($nav-bg,1);
+                letter-spacing: 0.75px;
+                padding: 0.5rem;
+                @extend %menu-hover;
                 }
-        }
+            }
         }
     }
 }
+
+// profil
+#profil{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .name{
+        padding-bottom: 1rem;
+        p{
+            opacity: 0.7;
+            font-style: italic;
+            font-size: 0.8rem;
+        }
+    }
+    a{
+        color: rgb(255, 255, 255);
+        border: 1px solid nth($nav-bg,1);
+        border-radius: 5px;
+        background-color: nth($nav-bg,1);
+        padding: 0.5rem;
+        &:hover{
+            background-color: white;
+        }
+        @extend %menu-hover;
+    }
+}
+
+// Eğitimler
+#egitimler{
+    background-color: nth($nav-bg,1);
+    color: nth($nav-color,1);
+    text-align: center;
+    padding: 1rem;
+    .container{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0;
+        @extend %sayfa-ortalama;
+        .article{
+            width:32%;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+            }
+        }
+    }
 }

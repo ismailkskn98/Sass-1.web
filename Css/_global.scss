@@ -1,0 +1,42 @@
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+%sayfa-ortalama{
+    max-width: 1440px;
+    height: auto;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+// renkler
+$hover-color:#EF7013;
+$nav-bg:#000549;
+$nav-color:white;
+
+// Text
+$heading-big:1.50rem;
+$heading-medium:1.25rem;
+$heading-small:1rem;
+$harf-aralik:0.060rem;
+$paragraf:0.9rem;
+h1{font-size: $heading-big;}
+h2{font-size: $heading-medium;}
+h3{font-size: $heading-small;}
+p{font-size: $paragraf;}
+p{letter-spacing: $harf-aralik;}
+
+//menu hover
+%menu-hover{
+    &:hover{
+    border: 1px solid nth($hover-color,1);
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color:nth($hover-color, 1);
+    padding: 0.5rem;
+    }
+}
