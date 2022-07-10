@@ -26,3 +26,17 @@ h3{
 p{
     letter-spacing: nth($harf-aralik,1)-0.020rem;
 }
+
+// Kurslar
+#kurslar{
+    .container{
+        .kurslar{
+            .kurs{
+                flex-direction: column;
+                .kurs-bilgiler{
+                    margin: 0 0 0.5rem 0;
+                }
+            }
+        }
+    }
+}

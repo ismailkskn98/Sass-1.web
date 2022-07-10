@@ -1,6 +1,6 @@
 @import "global";
 
-// header
+//header
 header {
     background: nth($nav-bg,1);
     .container {
@@ -15,14 +15,18 @@ header {
     .logo{
         display: flex;
         align-items: center;
-        color:nth($hover-color,1);
+        height: auto;
+        h1{
+            color:nth($hover-color,1);
+        }
         img{
             padding-right: 2rem;
+            border-radius: 100%;
         }
     }
     }
 
-    // menu
+    //menu
     #navbar {
         ul {
             display: flex;
@@ -40,7 +44,7 @@ header {
     }
 }
 
-// profil
+//profil
 #profil{
     padding: 2rem;
     display: flex;
@@ -48,6 +52,12 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    .profil-resmi{
+        height: auto;
+        img{
+            border-radius: 100%;
+        }
+    }
     .name{
         padding-bottom: 1rem;
         p{
@@ -57,7 +67,8 @@ header {
         }
     }
     a{
-        color: rgb(255, 255, 255);
+        color: nth($nav-color,1);
+        font-weight:600;
         border: 1px solid nth($nav-bg,1);
         border-radius: 5px;
         background-color: nth($nav-bg,1);
@@ -69,7 +80,7 @@ header {
     }
 }
 
-// Eğitimler
+//Eğitimler
 #egitimler{
     background-color: nth($nav-bg,1);
     color: nth($nav-color,1);
@@ -86,8 +97,57 @@ header {
         .article{
             width:32%;
             &:hover{
-                background-color: rgba(255, 255, 255, 0.1);
+                color: nth($hover-color,1);
                 border-radius: 10px;
+            }
+        }
+    }
+}
+
+//Kurslar
+#kurslar{
+    h2{text-align: center;}
+    padding: 1rem;
+    .container{
+        @extend %sayfa-ortalama;
+        padding: 1rem;
+        .kurslar{
+            flex-direction: column;
+            .kurs{
+                display: flex;
+                .kurs-image{
+                    position: relative;
+                    margin-bottom: 0.5rem;
+                    span{
+                        background-color: red;
+                        padding: 0.20rem;
+                        border-radius: 3px;
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                    }
+                    img{
+                    border-radius: 5px;
+                    }
+                }
+                .kurs-bilgiler{
+                    margin-left: 1rem;
+                    .kurs-baslik{
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                    }
+                    .kurs-aciklama{
+                        @extend %kurs-text;
+                        font-size: 1rem;
+                    }
+                    .kurs-icerik{
+                        @extend %kurs-text;
+                    }
+                    .kurs-reyting{
+                        @extend %kurs-text;
+
+                    }
+                }
             }
         }
     }

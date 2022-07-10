@@ -55,4 +55,11 @@ h3 {
 
 p {
   letter-spacing: 0.04rem;
+}
+
+#kurslar .container .kurslar .kurs {
+  flex-direction: column;
+}
+#kurslar .container .kurslar .kurs .kurs-bilgiler {
+  margin: 0 0 0.5rem 0;
 }/*# sourceMappingURL=tablet.css.map */

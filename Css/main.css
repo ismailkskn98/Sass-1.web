@@ -8,9 +8,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-#egitimler .container, header .container {
+#kurslar .container, #egitimler .container, header .container {
   max-width: 1440px;
   height: auto;
+  margin: 0 auto;
 }
 
 a {
@@ -41,6 +42,12 @@ p {
   letter-spacing: 0.06rem;
 }
 
+#kurslar .container .kurslar .kurs .kurs-bilgiler .kurs-reyting, #kurslar .container .kurslar .kurs .kurs-bilgiler .kurs-icerik, #kurslar .container .kurslar .kurs .kurs-bilgiler .kurs-aciklama {
+  margin-bottom: 0.25rem;
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
 #profil a:hover, header #navbar ul li a:hover {
   border: 1px solid #EF7013;
   border-bottom-left-radius: 8px;
@@ -64,10 +71,14 @@ header .container {
 header .container .logo {
   display: flex;
   align-items: center;
+  height: auto;
+}
+header .container .logo h1 {
   color: #EF7013;
 }
 header .container .logo img {
   padding-right: 2rem;
+  border-radius: 100%;
 }
 header #navbar ul {
   display: flex;
@@ -88,6 +99,12 @@ header #navbar ul li a {
   align-items: center;
   text-align: center;
 }
+#profil .profil-resmi {
+  height: auto;
+}
+#profil .profil-resmi img {
+  border-radius: 100%;
+}
 #profil .name {
   padding-bottom: 1rem;
 }
@@ -97,7 +114,8 @@ header #navbar ul li a {
   font-size: 0.8rem;
 }
 #profil a {
-  color: rgb(255, 255, 255);
+  color: white;
+  font-weight: 600;
   border: 1px solid #000549;
   border-radius: 5px;
   background-color: #000549;
@@ -125,6 +143,47 @@ header #navbar ul li a {
   width: 32%;
 }
 #egitimler .container .article:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  color: #EF7013;
   border-radius: 10px;
+}
+
+#kurslar {
+  padding: 1rem;
+}
+#kurslar h2 {
+  text-align: center;
+}
+#kurslar .container {
+  padding: 1rem;
+}
+#kurslar .container .kurslar {
+  flex-direction: column;
+}
+#kurslar .container .kurslar .kurs {
+  display: flex;
+}
+#kurslar .container .kurslar .kurs .kurs-image {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+#kurslar .container .kurslar .kurs .kurs-image span {
+  background-color: red;
+  padding: 0.2rem;
+  border-radius: 3px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+#kurslar .container .kurslar .kurs .kurs-image img {
+  border-radius: 5px;
+}
+#kurslar .container .kurslar .kurs .kurs-bilgiler {
+  margin-left: 1rem;
+}
+#kurslar .container .kurslar .kurs .kurs-bilgiler .kurs-baslik {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#kurslar .container .kurslar .kurs .kurs-bilgiler .kurs-aciklama {
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
