@@ -14,6 +14,14 @@ body {
   margin: 0 auto;
 }
 
+#footer .iletisim form button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
 a {
   text-decoration: none;
 }
@@ -30,8 +38,16 @@ h2 {
   font-size: 1.25rem;
 }
 
+#kurslar h2 {
+  text-align: center;
+}
+
 h3 {
   font-size: 1rem;
+}
+
+#footer h3 {
+  text-align: center;
 }
 
 p {
@@ -48,12 +64,23 @@ p {
   font-size: 0.8rem;
 }
 
-#profil a:hover, header #navbar ul li a:hover {
+#footer .iletisim form button, #profil a, header #navbar ul li a {
+  color: white;
+  font-size: 0.9rem;
+  border: 1px solid #000549;
+  letter-spacing: 0.75px;
+}
+#footer .iletisim form button:hover, #profil a:hover, header #navbar ul li a:hover {
+  background-color: white;
   border: 1px solid #EF7013;
   border-bottom-left-radius: 8px;
   border-top-right-radius: 8px;
   color: #EF7013;
-  padding: 0.5rem;
+}
+
+#footer .iletisim form .form-group input, #footer .iletisim form .form-group textarea {
+  padding: 0.5rem 0;
+  border-radius: 5px;
 }
 
 header {
@@ -83,12 +110,14 @@ header .container .logo img {
 header #navbar ul {
   display: flex;
 }
-header #navbar ul li a {
-  color: white;
-  font-size: 0.9rem;
-  border: 1px solid #000549;
-  letter-spacing: 0.75px;
+header #navbar ul li {
   padding: 0.5rem;
+}
+header #navbar ul li a {
+  padding: 0.5rem;
+}
+header #navbar ul li a:hover {
+  background-color: #000549;
 }
 
 #profil {
@@ -114,15 +143,10 @@ header #navbar ul li a {
   font-size: 0.8rem;
 }
 #profil a {
-  color: white;
-  font-weight: 600;
-  border: 1px solid #000549;
-  border-radius: 5px;
   background-color: #000549;
-  padding: 0.5rem;
-}
-#profil a:hover {
-  background-color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 0.65rem;
 }
 
 #egitimler {
@@ -150,9 +174,6 @@ header #navbar ul li a {
 #kurslar {
   padding: 1rem;
 }
-#kurslar h2 {
-  text-align: center;
-}
 #kurslar .container {
   padding: 1rem;
 }
@@ -176,6 +197,8 @@ header #navbar ul li a {
 }
 #kurslar .container .kurslar .kurs .kurs-image img {
   border-radius: 5px;
+  width: 100%;
+  height: auto;
 }
 #kurslar .container .kurslar .kurs .kurs-bilgiler {
   margin-left: 1rem;
@@ -186,4 +209,44 @@ header #navbar ul li a {
 }
 #kurslar .container .kurslar .kurs .kurs-bilgiler .kurs-aciklama {
   font-size: 1rem;
+}
+#footer {
+  background-color: #000549;
+  color: white;
+  padding: 1rem;
+}
+#footer .iletisim {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#footer .iletisim form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+#footer .iletisim form .form-group input, #footer .iletisim form .form-group textarea {
+  width: 100%;
+  resize: none;
+  margin-bottom: 0.5rem;
+}
+#footer .iletisim form button {
+  background-color: #000549;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#footer .iletisim ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#footer .iletisim ul li a {
+  color: white;
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+}
+#footer .iletisim ul li a:hover {
+  color: #EF7013;
 }/*# sourceMappingURL=main.css.map */

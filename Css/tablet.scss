@@ -32,6 +32,11 @@ p{
     .container{
         .kurslar{
             .kurs{
+                .kurs-image{
+                    img{
+                        max-width: 60%;
+                    }
+                }
                 flex-direction: column;
                 .kurs-bilgiler{
                     margin: 0 0 0.5rem 0;

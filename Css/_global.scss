@@ -12,6 +12,14 @@ body{
     height: auto;
     margin: 0 auto;
 }
+%button{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 7px;
+    font-weight: 700;
+    
+}
 a{text-decoration: none;}
 ul{list-style: none;}
 // renkler
@@ -26,9 +34,13 @@ $heading-small:1rem;
 $harf-aralik:0.060rem;
 $paragraf:0.9rem;
 h1{font-size: $heading-big;}
+%h1{h1{text-align: center;}}
 h2{font-size: $heading-medium;}
+%h2{h2{text-align: center;}}
 h3{font-size: $heading-small;}
+%h3{h3{text-align: center;}}
 p{font-size: $paragraf;}
+%p{p{text-align: center;}}
 p{letter-spacing: $harf-aralik;}
 
 // kurs text
@@ -40,11 +52,22 @@ p{letter-spacing: $harf-aralik;}
 
 //menu hover
 %menu-hover{
+    color :nth($nav-color,1);
+    font-size: 0.9rem;
+    border: 1px solid nth($nav-bg,1);
+    letter-spacing: 0.75px;
     &:hover{
+    background-color: white;
     border: 1px solid nth($hover-color,1);
     border-bottom-left-radius: 8px;
     border-top-right-radius: 8px;
     color:nth($hover-color, 1);
-    padding: 0.5rem;
     }
+}
+
+// form
+// Form
+%form-control{ 
+    padding: 0.50rem 0;
+    border-radius:5px;
 }

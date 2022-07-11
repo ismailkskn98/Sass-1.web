@@ -10,9 +10,12 @@ header{
             max-height: 40px;
         }
         #navbar{
+            ul{
+                margin: 0.5rem 0;
             a{
                 font-size: 0.7rem;
             }
+        }
         }
     }
 }
@@ -34,5 +37,20 @@ header{
     }
     p{
         letter-spacing: nth($harf-aralik,1)-0.020rem;
+    }
+}
+
+// kurslar
+#kurslar{
+    .container{
+        .kurslar{
+            .kurs{
+                .kurs-image{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
     }
 }

@@ -60,6 +60,9 @@ p {
 #kurslar .container .kurslar .kurs {
   flex-direction: column;
 }
+#kurslar .container .kurslar .kurs .kurs-image img {
+  max-width: 60%;
+}
 #kurslar .container .kurslar .kurs .kurs-bilgiler {
   margin: 0 0 0.5rem 0;
 }/*# sourceMappingURL=tablet.css.map */

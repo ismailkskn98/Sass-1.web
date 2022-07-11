@@ -45,7 +45,10 @@ header .container .logo {
   max-width: 70px;
   max-height: 40px;
 }
-header .container #navbar a {
+header .container #navbar ul {
+  margin: 0.5rem 0;
+}
+header .container #navbar ul a {
   font-size: 0.7rem;
 }
 
@@ -64,4 +67,8 @@ header .container #navbar a {
 }
 #egitimler p {
   letter-spacing: 0.04rem;
+}
+
+#kurslar .container .kurslar .kurs .kurs-image img {
+  max-width: 100%;
 }/*# sourceMappingURL=mobile.css.map */
