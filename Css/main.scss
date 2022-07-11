@@ -53,26 +53,29 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    .profil-resmi{
-        height: auto;
-        img{
-            border-radius: 100%;
+    .container{
+        @extend %sayfa-ortalama;
+        .profil-resmi{
+            height: auto;
+            img{
+                border-radius: 100%;
+            }
         }
-    }
-    .name{
-        padding-bottom: 1rem;
-        p{
-            opacity: 0.7;
-            font-style: italic;
-            font-size: 0.8rem;
+        .name{
+            padding-bottom: 1rem;
+            p{
+                opacity: 0.7;
+                font-style: italic;
+                font-size: 0.8rem;
+            }
         }
-    }
-    a{
-        background-color: nth($nav-bg,1);
-        border-radius: 4px;
-        font-weight:600;
-        padding: 0.65rem;
-        @extend %menu-hover;
+        a{
+            background-color: nth($nav-bg,1);
+            border-radius: 4px;
+            font-weight:600;
+            padding: 0.65rem;
+            @extend %menu-hover;
+        }
     }
 }
 

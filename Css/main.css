@@ -8,7 +8,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-#kurslar .container, #egitimler .container, header .container {
+#kurslar .container, #egitimler .container, #profil .container, header .container {
   max-width: 1440px;
   height: auto;
   margin: 0 auto;
@@ -64,13 +64,13 @@ p {
   font-size: 0.8rem;
 }
 
-#footer .iletisim form button, #profil a, header #navbar ul li a {
+#footer .iletisim form button, #profil .container a, header #navbar ul li a {
   color: white;
   font-size: 0.9rem;
   border: 1px solid #000549;
   letter-spacing: 0.75px;
 }
-#footer .iletisim form button:hover, #profil a:hover, header #navbar ul li a:hover {
+#footer .iletisim form button:hover, #profil .container a:hover, header #navbar ul li a:hover {
   background-color: white;
   border: 1px solid #EF7013;
   border-bottom-left-radius: 8px;
@@ -128,21 +128,21 @@ header #navbar ul li a:hover {
   align-items: center;
   text-align: center;
 }
-#profil .profil-resmi {
+#profil .container .profil-resmi {
   height: auto;
 }
-#profil .profil-resmi img {
+#profil .container .profil-resmi img {
   border-radius: 100%;
 }
-#profil .name {
+#profil .container .name {
   padding-bottom: 1rem;
 }
-#profil .name p {
+#profil .container .name p {
   opacity: 0.7;
   font-style: italic;
   font-size: 0.8rem;
 }
-#profil a {
+#profil .container a {
   background-color: #000549;
   border-radius: 4px;
   font-weight: 600;
